@@ -7,7 +7,7 @@ export function Header(){
             <img src="src/assets/logo.png" alt="Logo">
             <p>Gean Reyes</p>
         </div>
-        <img class="burger" src="src/assets/menu-burger.svg" alt="Burger">
+        <img class="burger-btn" src="src/assets/menu-burger.svg" alt="Burger">
     `;
 
     
