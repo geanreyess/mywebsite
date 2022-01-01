@@ -96,6 +96,12 @@ header .burger-btn {
     visibility: visible;
 }
 
+.panel.not-active {
+    transform: translate(0,-100%);
+    opacity: 1;
+    visibility: visible;
+}
+
 .menu {
     width: inherit;
     display: flex;
