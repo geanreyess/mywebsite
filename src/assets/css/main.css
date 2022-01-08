@@ -124,3 +124,97 @@ header .burger-btn {
     color: var(--second-color);
     background-color: var(--main-modal-color);
 }
+
+/*Estilos de la seccion de la heroImage*/
+
+section .heroImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+    background-image: url("hero-image.jpg");
+
+}
+
+.photo-perfil {
+    border-radius: 50%;
+    border: medium solid white;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.data p {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.data p:first-child {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
