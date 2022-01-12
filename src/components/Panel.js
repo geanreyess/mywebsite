@@ -4,10 +4,10 @@ export default function Panel(){
     $panel.classList.add("panel");
     $panel.innerHTML = `
         <nav class="menu">
-            <a href="#seccion1" data-scroll-spy>Portafolio</a>
-            <a href="#seccion2" data-scroll-spy>Skillset</a>
-            <a href="#seccion3" data-scroll-spy>Tecnologias</a>
-            <a href="#seccion4" data-scroll-spy>Contacto</a>
+            <a href="index.html#portafolio" data-scroll-spy>Portafolio</a>
+            <a href="index.html#skillset" data-scroll-spy>Skillset</a>
+            <a href="index.html#tecnologias" data-scroll-spy>Tecnologias</a>
+            <a href="index.html#contacto" data-scroll-spy>Contacto</a>
         </nav>
     `;
 

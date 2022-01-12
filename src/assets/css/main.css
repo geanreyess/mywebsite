@@ -165,7 +165,14 @@ section .heroImage {
     margin-bottom: 0;
 }
 
+/* Estilos a las secciones*/
 
+.sections {
+    background-color: #f7df1e;
+    width: 100%;
+    height: 100vh;
+    padding-top: 83px;
+}
 
 
 
