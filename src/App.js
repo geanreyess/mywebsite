@@ -2,6 +2,7 @@ import {Header} from "./components/Header.js";
 import Main from "./components/Main.js";
 import MenuBurger from "./components/MenuBurger.js";
 import Panel from "./components/Panel.js";
+import HeroImage from "./components/HeroImage.js";
 
 export default function App(){
     console.log("Ejecutando la app");
@@ -9,8 +10,9 @@ export default function App(){
     const $root = d.getElementById("root");
     $root.appendChild(Header());
     $root.appendChild(Panel());
+    $root.appendChild(HeroImage());
     $root.appendChild(Main())
-
+    
 
 
 
