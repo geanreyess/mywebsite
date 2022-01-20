@@ -139,13 +139,16 @@ section .heroImage {
     background-image: url("hero-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-origin: border-box;
 
 }
 
 .photo-perfil {
     border-radius: 50%;
     border: medium solid white;
-    width: 150px;
+    width: 200px;
+    margin-top: 45px;
     margin-bottom: 20px;
 }
 
@@ -156,13 +159,20 @@ section .heroImage {
     
 }
 
-.data p {
+.data p,
+.data h1 {
     color: white;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+.data h1 {
+    font-size: 3rem;
+}
+.data p {
+    font-size: 1.5rem;
+}
 .data p:first-child {
     font-size: 25px;
     margin-bottom: 0;
