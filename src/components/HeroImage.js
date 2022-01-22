@@ -5,7 +5,7 @@ export default function HeroImage(){
         <article class="heroImage">
             <img class="photo-perfil" src="./src/assets/img/foto-perfil.jpg" alt="Foto-GeanReyes">
             <div class="data">
-                <h1>Gean Carlo</h1>
+                <h1>Gean Reyes</h1>
                 <p>Desarrollador Frontend</p>
             </div>
         </article>
