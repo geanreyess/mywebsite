@@ -13,6 +13,7 @@ html {
     box-sizing: border-box;
     font-family: var(--main-font);
     font-size: var(--font-size);
+
     scroll-behavior: smooth;
 }
 
@@ -32,6 +33,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 
 
 /* Estilos para la cabecera del sitio web */
@@ -180,6 +182,10 @@ section .heroImage {
 
 /* Estilos a las secciones*/
 
+section[class="sections"] {
+    scroll-margin-top: 8ex;
+}
+
 .sections {
     color: white;
     z-index: 200;
@@ -187,7 +193,7 @@ section .heroImage {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,47,121,1) 100%);
     width: 100%;
     height: 100vh;
-    padding-top: 70px;
+    padding: 1rem;
     text-align: center;
 }
 
