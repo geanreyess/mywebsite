@@ -9,6 +9,7 @@ export default function Panel(){
             <a href="index.html#tecnologias" data-scroll-spy>Tecnologias</a>
             <a href="index.html#contacto" data-scroll-spy>Contacto</a>
         </nav>
+        <p class="copy">Todos los derechos reservados <span>&copy;</span> Copyright 2022</p>
     `;
 
 
