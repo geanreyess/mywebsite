@@ -3,7 +3,7 @@ export default function Contacto(){
     $contacto.classList.add("sections");
     $contacto.id = "contacto";
     $contacto.innerHTML = `
-        <h2>Seccion del contacto</h2>
+        <h2>contactame</h2>
     `;
     
     return $contacto;
