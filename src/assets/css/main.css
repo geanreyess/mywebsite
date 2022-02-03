@@ -233,7 +233,7 @@ section[class="sections"] {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -304,8 +304,11 @@ section[class="sections"] {
     font-size: 1rem;
 }
 
+/* Estilos de la seccion de Habilidades*/
 
-
+.skills li {
+    text-align: left;
+}
 
 
 
