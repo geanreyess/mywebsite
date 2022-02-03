@@ -165,7 +165,7 @@ section .heroImage {
     justify-content: start;
     align-items: center;
     width: 100%;
-    height: 80vh;
+    height: auto;
     background-image: url("../img/hero-image-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,9 +210,9 @@ section .heroImage {
 
 /* Estilos a las secciones*/
 
-section[class="sections"] {
-    scroll-margin-top: 8ex;
-}
+/* section[class="sections"] {
+    scroll-margin-top: 80px;
+} */
 
 .sections {
     color: var(--color-text);
@@ -222,6 +222,7 @@ section[class="sections"] {
     height: auto;
     padding: 1rem;
     text-align: center;
+    scroll-margin-top: 80px;
 }
 
 .sections .portfolios-container {
@@ -239,8 +240,14 @@ section[class="sections"] {
     margin-bottom: 20px;
     background-color: var(--second-color);
     border-radius: 20px;
+    border: medium solid var(--primary-color);
     
 }
+
+.portfolios-container .portfolio:hover {
+    border: medium solid var(--border-color);
+}
+
 
 .portfolio .img-proyect {
     width: 100%;
@@ -310,6 +317,43 @@ section[class="sections"] {
     text-align: left;
 }
 
+/* Estilos de la seccion de Tecnologías*/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: var(--border-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    top: 50px;
+    left: -17px;
+    z-index: 1;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.technologies-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.technologies-container img:hover {
+    transform: scale(1.3);
+}
 
 
 
