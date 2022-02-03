@@ -281,11 +281,15 @@ section[class="sections"] {
 }
 
 .reference-container img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: thick solid var(--border-color);
 
+}
+
+.comments p {
+    font-size: 1rem;
 }
 
 
