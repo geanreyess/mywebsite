@@ -110,10 +110,15 @@ img {
     transform: translate(0, 0);
 }
 
-.panel .copy {
+.panel p {
     color: var(--color-text);
     font-size: .7rem;
 }
+
+.panel .cp {
+    font-size: 1rem;
+}
+
 
 .panel.is-active {
     transform: translate(0,0);
