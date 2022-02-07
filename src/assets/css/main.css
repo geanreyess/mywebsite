@@ -395,6 +395,18 @@ form label {
     
 }
 
+/* Agregando validacion para el formulario del cotacto*/
+
+form > *[required]:valid:required {
+    border: thin solid var(--form-success-color);
+}
+
+form > *[required]:invalid {
+    border: thin solid var(--form-error-color);
+}
+
+/* -------------------------------------*/
+
 form input[type="email"],
 form textarea {
     width: inherit;
@@ -437,15 +449,7 @@ form textarea {
 }
 
 
-/* Agregando validacion para el formulario del cotacto*/
 
-form > *[required]:valid {
-    border: thin solid var(--form-success-color);
-}
-
-form > *[required]:invalid {
-    border: thin solid var(--form-error-color);
-}
 
 
 
