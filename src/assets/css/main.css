@@ -12,6 +12,8 @@
     --main-modal-color: #6a6d728c;
     --second-modal-color: rgba(34, 34, 34, 0.85);
     --container-width: 1200px;
+    --form-success-color: #4caf50;
+    --form-error-color: #f44336;
 }
 
 html {
@@ -166,12 +168,13 @@ section .heroImage {
     justify-content: start;
     align-items: center;
     width: 100%;
-    height: auto;
+    min-height: 100vh;
     background-image: url("../img/hero-image-2.jpg");
     background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
     background-attachment: fixed;
-    background-origin: border-box;
+    /* background-origin: border-box; */
 
 }
 
@@ -382,12 +385,17 @@ section .heroImage {
     background-color: var(--second-color);
 }
 
+form > *::placeholder {
+    color: #3d973c8c
+    
+}
+
 form label {
     text-align: left;
     
 }
 
-form input[type="text"],
+form input[type="email"],
 form textarea {
     width: inherit;
     margin-bottom: 1rem;
@@ -399,7 +407,7 @@ form textarea {
     border: thin solid var(--border-color);
 }
 
-form input[type="text"]:hover,
+form input[type="email"]:hover,
 form textarea:hover {
     border: thin solid var(--border-color-hover);
 }
@@ -418,20 +426,26 @@ form textarea {
     background-color : var(--bg-botton);
     border: thin solid var(--border-color);
     border-radius: 3px;
-    cursor: pointer;
     padding: 8px;
+    opacity: 0.75;
 }
 
 .contact-container input[type="submit"]:hover {
-    transition: background-color .5s ease-in-out;
-    background-color: var(--bg-botton-hover);
+    transition: opacity .5s ease-in-out;
+    cursor: pointer;
+    opacity: 1;
 }
 
 
+/* Agregando validacion para el formulario del cotacto*/
 
+form > *[required]:valid {
+    border: thin solid var(--form-success-color);
+}
 
-
-
+form > *[required]:invalid {
+    border: thin solid var(--form-error-color);
+}
 
 
 
