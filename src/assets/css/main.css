@@ -38,6 +38,30 @@ body {
     
 }
 
+/* Estilos del scroll del body para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button{
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color-scrollbar);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
 img {
     max-width: 100%;
     height: auto;
