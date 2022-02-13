@@ -3,6 +3,7 @@
     --second-color: #242526;
     --border-color: #393a3b;
     --border-color-hover: #616364;
+    --bg-color-scrollbar: #6163647a;
     --color-text: #e4e6eb;
     --bg-botton: #494b4e;
     --bg-botton-hover: #6a6d72;
@@ -245,16 +246,40 @@ section .heroImage {
 }
 
 .container-scroll-portfolio {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 100%);
     grid-template-rows: repeat(1, auto);
     overflow-x: scroll;
     scroll-snap-type: both mandatory;
-
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Estilos del scrollbar para motores Webkit y blink (Chrome, Safari, Opera... )*/
 
+.container-scroll-portfolio::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.container-scroll-portfolio::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+.container-scroll-portfolio::-webkit-scrollbar-button:increment,
+.container-scroll-portfolio::-webkit-scrollbar-button{
+    display: none;
+}
+
+.container-scroll-portfolio::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color-scrollbar);
+    border-radius: 20px;
+}
+
+.container-scroll-portfolio::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
 
 .portfolios-container .portfolio {
     display: flex;
