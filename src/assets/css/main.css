@@ -104,8 +104,10 @@ img {
     right: 0;
     text-align: center;
     z-index: 996;
+    max-width: 300px;
     width: 50%;
     padding: 1rem 10px 0 10px;
+    border-right: thin solid var(--border-color-hover);
     background-color: var(--second-color);
     opacity: 0;
     visibility: hidden;
@@ -230,10 +232,29 @@ section .heroImage {
 }
 
 .portfolios-container {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
+    text-align: center; */
+    overflow-x: hidden;
+    
+}
+
+.portfolios-container h2,
+.portfolios-container p {
     text-align: center;
 }
+
+.container-scroll-portfolio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    grid-template-rows: repeat(1, auto);
+    overflow-x: scroll;
+    scroll-snap-type: both mandatory;
+
+}
+
+
 
 .portfolios-container .portfolio {
     display: flex;
@@ -246,6 +267,7 @@ section .heroImage {
     background-color: var(--second-color);
     border-radius: 20px;
     border: medium solid var(--primary-color);
+    scroll-snap-align: center;
     
 }
 
@@ -256,10 +278,7 @@ section .heroImage {
 
 .portfolio .img-proyect {
     width: 100%;
-    height: 200px;
-    background-image: url("../portafolio/no-image.png");
-    background-position: 0 50%;
-    background-size: cover;
+    height: auto;  
 }
 
 .portfolio .portfolio-info {
@@ -397,7 +416,7 @@ form label {
 
 /* Agregando validacion para el formulario del cotacto*/
 
-form > *[required]:valid:required {
+form > *[required]:valid {
     border: thin solid var(--form-success-color);
 }
 
