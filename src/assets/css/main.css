@@ -209,34 +209,32 @@ section .heroImage {
     border-radius: 50%;
     border: medium solid white;
     width: 200px;
-    margin-top: 45px;
-    margin-bottom: 20px;
+    margin-right: 25px;
+    /* margin-top: 45px;
+    margin-bottom: 20px; */
 }
 
 .data {
     display: flex;
     flex-direction: column;
+    justify-content:center;
     align-items: center;
-    
 }
 
-.data p,
-.data h1 {
+.data .title {
+    text-align: center;
     color: var(--color-text);
+    font-size: 2rem;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.data h1 {
-    font-size: 3rem;
-}
-.data p {
+.data .comment {
+    text-align: justify;
+    color: var(--color-text);
     font-size: 1.2rem;
-}
-.data p:first-child {
-    font-size: 25px;
-    margin-bottom: 0;
+    padding: 0 10px;
 }
 
 /* Estilos a las secciones*/
@@ -254,6 +252,10 @@ section .heroImage {
     padding: 1rem;
     
     scroll-margin-top: 80px;
+}
+
+.sections h2 {
+    font-size: 2rem;
 }
 
 .portfolios-container {
@@ -391,6 +393,7 @@ section .heroImage {
 
 .skills li {
     text-align: left;
+    font-size: 1.5rem;
 }
 
 /* Estilos de la seccion de Tecnologías*/
@@ -518,6 +521,102 @@ form textarea {
 
 
 
+
+/* Medias queries */
+/* Tablet */
+@media screen and (min-width: 768px) {
+
+    section .heroImage {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .photo-perfil {
+        width: 380px;
+    }
+    
+    
+    
+    .data .title {
+        font-size: 2.6rem; 
+    }
+    
+    .data .comment {
+        text-align: justify;
+        color: var(--color-text);
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+
+    
+    .portfolios-container {
+        width: 100%;
+        
+    }
+
+    .container-scroll-portfolio {
+        /* display: grid; */
+        grid-template-columns: repeat(3, 50%);
+        grid-template-rows: repeat(1, auto);
+        /* column-gap: 10px; */
+        /* overflow-x: scroll; */
+        scroll-snap-type: both mandatory;
+        width: 100%;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+}
+
+
+
+
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+    .data .title {
+        font-size: 3.6rem; 
+    }
+    
+    .data .comment {
+        text-align: justify;
+        color: var(--color-text);
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+
+
+
+
+    .portfolios-container {
+        width: 100%;
+        
+    }
+
+    .container-scroll-portfolio {
+        /* display: grid; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, auto);
+        justify-items: center;
+        justify-content: center;
+        /* column-gap: 10px; */
+        overflow-x: hidden;
+        /* scroll-snap-type: both mandatory; */
+        width: 100%;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 
 
