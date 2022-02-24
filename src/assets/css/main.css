@@ -2,6 +2,8 @@
     --primary-color: #18191a;
     --second-color: #242526;
     --border-color: #393a3b;
+    --border-color-photo-perfil: #78d13b;
+    --border-color-reference: #ffc83d;
     --border-color-hover: #616364;
     --bg-color-scrollbar: #6163647a;
     --color-text: #e4e6eb;
@@ -197,6 +199,7 @@ section .heroImage {
     justify-content: start;
     align-items: center;
     width: 100%;
+    padding-top: 2rem;
     min-height: 100vh;
     background-image: url("../img/hero-image-2.jpg");
     background-repeat: no-repeat;
@@ -209,11 +212,11 @@ section .heroImage {
 
 .photo-perfil {
     border-radius: 50%;
-    border: medium solid white;
-    width: 200px;
-    margin-right: 25px;
-    /* margin-top: 45px;
-    margin-bottom: 20px; */
+    border: medium solid var(--border-color-photo-perfil);
+    width: 150px;
+    /* margin-right: 25px; */
+    margin-top: 3rem;
+    /* margin-bottom: 20px; */
 }
 
 .data {
@@ -226,7 +229,7 @@ section .heroImage {
 .data .title {
     text-align: center;
     color: var(--color-text);
-    font-size: 2rem;
+    font-size: var(--step-4);
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -257,7 +260,7 @@ section .heroImage {
 }
 
 .sections h2 {
-    font-size: 2rem;
+    font-size: var(--step-2);
 }
 
 .portfolios-container {
@@ -380,7 +383,7 @@ section .heroImage {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: thick solid var(--border-color);
+    border: thick solid var(--border-color-reference);
 
 }
 
@@ -528,20 +531,6 @@ form textarea {
 /* Tablet */
 @media screen and (min-width: 768px) {
 
-    section .heroImage {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        padding: 0 20px;
-    }
-    
-    .photo-perfil {
-        width: 380px;
-        margin-top: 30px;
-    }
-    
-    
     
     .data .title {
         font-size: 2.6rem; 
