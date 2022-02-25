@@ -120,7 +120,13 @@ img {
     width: 1.5rem;
     height: auto;
     margin: 0 .5rem;
+    opacity: .5;
 }
+
+.social-media-container a:hover {
+    opacity: 1;
+}
+
 
 .burger-btn {
     position: fixed;
@@ -198,7 +204,11 @@ img {
     text-decoration: none;
     color: var(--main-color);
     transition: all 0.3s ease;
+    opacity: .5;
+}
 
+.menu a:hover {
+    opacity: 1;
 }
 
 .menu span {
