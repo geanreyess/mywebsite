@@ -15,7 +15,7 @@ export default function Portafolio(){
                     <div class="reference-container">
                         <img src="src/assets/avatares/avatar-1.PNG" alt="Avatar del CEO">
                         <div class="comments">
-                            <p>"Breve agradecieminmto del CEO de la Empresa"</p>
+                            <p>"Breve agradecimiento del CEO de la Empresa"</p>
                             <p><i>Nombre del CEO</i></p>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ export default function Portafolio(){
                     <div class="reference-container">
                         <img src="src/assets/avatares/avatar-2.PNG" alt="Avatar del CEO">
                         <div class="comments">
-                            <p>"Breve agradecieminmto del CEO de la Empresa"</p>
+                            <p>"Breve agradecimiento del CEO de la Empresa"</p>
                             <p><i>Nombre del CEO</i></p>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ export default function Portafolio(){
                     <div class="reference-container">
                         <img src="src/assets/avatares/avatar-3.PNG" alt="Avatar del CEO">
                         <div class="comments">
-                            <p>"Breve agradecieminmto del CEO de la Empresa"</p>
+                            <p>"Breve agradecimiento del CEO de la Empresa"</p>
                             <p><i>Nombre del CEO</i></p>
                         </div>
                     </div>
