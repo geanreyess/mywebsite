@@ -7,6 +7,7 @@
     --border-color-hover: #616364;
     --bg-color-scrollbar: #6163647a;
     --color-text: #e4e6eb;
+    --color-text-opacity: #e4e6eb96;
     --bg-botton: #494b4e;
     --bg-botton-hover: #6a6d72;
     --main-font: sans-serif;
@@ -486,7 +487,8 @@ section .heroImage {
 }
 
 form > *::placeholder {
-    color: #3d973c8c
+    color: var(--color-text-opacity);
+    font-size: var(--step--2);
     
 }
 
@@ -501,7 +503,7 @@ form > *[required]:valid {
     border: thin solid var(--form-success-color);
 }
 
-form > *[required]:invalid {
+form > *[required]:invalid:focus {
     border: thin solid var(--form-error-color);
 }
 
