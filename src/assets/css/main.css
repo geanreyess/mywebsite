@@ -502,10 +502,6 @@ form > *::placeholder {
     
 }
 
-form label {
-    text-align: left;
-    
-}
 
 /* Agregando validacion para el formulario del cotacto*/
 
