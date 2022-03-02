@@ -1,25 +1,24 @@
 export default function MenuBurger(panelBtn, panel, menuLink) {
     const d = document;
-    let toggle;
+    const $btnMenu = d.querySelector(panelBtn);
+    const $menu = d.querySelector(panel);
     d.addEventListener('click', (e) => {
         
         if(e.target.matches(panelBtn) || e.target.matches(`${panelBtn} *`)){
-            toggle = d.querySelector(panel).classList.toggle("is-active")
-            if(!toggle){
-                d.querySelector(panel).classList.add("not-active")
-            }else {
-                d.querySelector(panel).classList.remove("not-active")
-
-            }
+            
+            $btnMenu.firstElementChild.classList.toggle("none");
+            $btnMenu.lastElementChild.classList.toggle("none");
+            $menu.classList.toggle("is-active");
             
         }
 
         if(e.target.matches(menuLink)){
-            d.querySelector(panel).classList.remove("is-active")
-            // d.querySelector(panelBtn).classList.remove("is-active")
-            console.log("Se desactivo")
+            $btnMenu.firstElementChild.classList.remove("none");
+            $btnMenu.lastElementChild.classList.add("none");
+            $menu.classList.remove("is-active");
         }
-
-
+        
+        console.log(panelBtn)
+        
     })
 }

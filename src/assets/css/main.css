@@ -132,9 +132,19 @@ img {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+    /* width: 40px; */
+    border: 0;
     border-radius: 50%;
     background-color: var(--bg-botton);
     transition: background-color 1s ease;
+}
+
+.burger-btn > svg {
+    fill: var(--color-text);
+}
+
+.none {
+    display: none;
 }
 
 .burger-btn:hover {
@@ -161,10 +171,10 @@ img {
     padding: 1rem 10px 0 10px;
     border-right: thin solid var(--border-color-hover);
     background-color: var(--second-color);
+    transition: transform .3s ease;
+    transform: translate(-100%, 0);
     opacity: 0;
     visibility: hidden;
-    transition: transform .3s ease;
-    transform: translate(0, 0);
 }
 
 .panel p {
@@ -176,15 +186,8 @@ img {
     font-size: 1rem;
 }
 
-
 .panel.is-active {
-    transform: translate(0,0);
-    opacity: 1;
-    visibility: visible;
-}
-
-.panel.not-active {
-    transform: translate(-100%, 0);
+    transform: translate(0, 0);
     opacity: 1;
     visibility: visible;
 }
