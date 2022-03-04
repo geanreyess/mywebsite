@@ -2,6 +2,8 @@
     --primary-color: #18191a;
     --second-color: #242526;
     --border-color: #393a3b;
+    --white-color: #FFFFFF;
+    --black-alpha-color:rgba(0, 0, 0, 0.5);
     --border-color-photo-perfil: #78d13b;
     --border-color-reference: #ffc83d;
     --border-color-hover: #616364;
@@ -231,8 +233,8 @@ img {
 
 /*Estilos de la seccion de la heroImage*/
 
-section .heroImage {
-    display: flex;
+.hero-image {
+    /* display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -243,42 +245,65 @@ section .heroImage {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     /* background-origin: border-box; */
+    background-image: var(--hero-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: var(--hero-attachment);
 
 }
+
+.hero-image-opacity {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hero-opacity-color);
+}
+
+.hero-image-title {
+    font-size: 7.5vw;
+    color: var(--hero-text-color);
+    margin-bottom: 0;
+}
+
+
 
 .photo-perfil {
     border-radius: 50%;
     border: medium solid var(--border-color-photo-perfil);
-    width: 150px;
+    width: 30vw;
     /* margin-right: 25px; */
     margin-top: 3rem;
     /* margin-bottom: 20px; */
 }
 
-.data {
+/* .data {
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-}
+} */
 
-.data .title {
+/* .data .title {
     text-align: center;
     color: var(--color-text);
     font-size: var(--step-4);
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
-}
+} */
 
-.data .comment {
+/* .data .comment {
     text-align: justify;
     color: var(--color-text);
     font-size: 1.2rem;
     padding: 0 10px;
-}
+} */
 
 /* Estilos a las secciones*/
 
