@@ -3,6 +3,7 @@ import Main from "./components/Main.js";
 import MenuBurger from "./components/MenuBurger.js";
 import Panel from "./components/Panel.js";
 import HeroImage from "./components/HeroImage.js";
+import ContactForm from "./helpers/Contact-form.js";
 
 export default function App(){
     console.log("Ejecutando la app");
@@ -21,4 +22,5 @@ export default function App(){
     //carga de modulos...
     console.log("Hola mundo")
     MenuBurger(".burger-btn", ".panel", ".menu a");
+    ContactForm();
 }

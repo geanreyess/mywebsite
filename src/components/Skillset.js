@@ -4,13 +4,15 @@ export default function Skillset(){
     $skillset.classList.add("skills-container");
     $skillset.id = "skillset";
     $skillset.innerHTML = `
-        <h2>Habilidades</h2>
-        <ul class="skills">
-            <li>Programación Web Frontend</li>
-            <li>Programación Web Backend</li>
-            <li>Autodidacta</li>
-            <li>Persistente</li>
-        </ul>
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul class="skills">
+                <li>Programación Web Frontend</li>
+                <li>Programación Web Backend</li>
+                <li>Autodidacta</li>
+                <li>Persistente</li>
+            </ul>
+        </div>
     `;
     
     return $skillset;
