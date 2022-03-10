@@ -7,6 +7,7 @@ export default function HeroImage(){
                 <div class="hero-image-content">
                     <h2 class="hero-image-title" style="--hero-text-color: var(--white-color)">Hola, soy Gean Reyes...<br>y desarrollo para la web</h2>
                     <img class="photo-perfil" src="./src/assets/img/foto-perfil.jpg" alt="Foto-GeanReyes">
+                    <a href="index.html#contacto" class="btn btn-hero-image">CONTACTAME</a>
                 </div>
             </aside>
         </article>

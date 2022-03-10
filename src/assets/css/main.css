@@ -1,4 +1,7 @@
+/* ------- Custom Properties ----------*/
+
 :root {
+    --bg-btn-hero-image: #238636;
     --primary-color: #18191a;
     --second-color: #242526;
     --border-color: #393a3b;
@@ -10,7 +13,7 @@
     --bg-color-scrollbar: #6163647a;
     --color-text: #e4e6eb;
     --color-text-opacity: #e4e6eb96;
-    --bg-botton: #494b4e;
+    --bg-botton: #142339;
     --bg-botton-hover: #6a6d72;
     --main-font: sans-serif;
     --font-size: 16px;
@@ -32,6 +35,8 @@
     --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem);
 }
 
+/* ------------------------------------- */
+/* --------------Reset -----------------*/
 html {
     box-sizing: border-box;
     font-family: var(--main-font);
@@ -44,6 +49,29 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+/* ----------------------------------- */
+/* ------------- Components --------- */
+.btn {
+    border-radius: .5rem;
+    padding: 1rem;
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--bg-btn-hero-image);
+}
+/* ----------------------------------- */
+
+/* ------------- Utilities ----------- */
+
+.container {
+    max-width: var(--container-width);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
@@ -82,7 +110,9 @@ img {
     height: auto;
 }
 
+/* ---------------------------------- */
 
+/* ------------- Styles site ----------*/
 
 /* Estilos para la cabecera del sitio web */
 .header {
@@ -97,11 +127,16 @@ img {
     width: 100%;
     height: 13vh;
     border-bottom: thin solid var(--border-color);
-    padding: 1rem .5rem;
+    padding: .5rem 1rem;
     opacity: 1;
    
 }
 
+.header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .header span {
     width: 45%;
@@ -135,7 +170,7 @@ img {
     bottom: 1rem;
     right: 1rem;
     /* width: 40px; */
-    border: 0;
+    border: thin solid #214c87;
     border-radius: 50%;
     background-color: var(--bg-botton);
     transition: background-color 1s ease;
@@ -151,7 +186,7 @@ img {
 
 .burger-btn:hover {
     cursor: pointer;
-    background-color: var(--bg-botton-hover);
+    background-color: var(--bg-botton);
 }
 
 
@@ -169,7 +204,7 @@ img {
     text-align: center;
     z-index: 996;
     max-width: 300px;
-    width: 10rem;
+    width: 180px;
     padding: 1rem 10px 0 10px;
     border-right: thin solid var(--border-color-hover);
     background-color: var(--second-color);
@@ -219,7 +254,7 @@ img {
 .menu span {
     display: inline-block;
     width: .9rem;
-    margin-right: .3rem;
+    margin-right: 1.3rem;
 
 }
 
@@ -230,6 +265,15 @@ img {
     color: var(--color-text);
     background-color: var(--main-modal-color);
 }
+
+@media screen and (min-width: 768px) {
+    .panel {
+        max-width: 300px;
+        width: 280px;
+    }
+}
+
+
 
 /*Estilos de la seccion de la heroImage*/
 
@@ -265,6 +309,13 @@ img {
     background-color: var(--hero-opacity-color);
 }
 
+.hero-image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero-image-title {
     font-size: 7.5vw;
     color: var(--hero-text-color);
@@ -276,10 +327,15 @@ img {
 .photo-perfil {
     border-radius: 50%;
     border: medium solid var(--border-color-photo-perfil);
-    width: 30vw;
+    width: 40vw;
     /* margin-right: 25px; */
     margin-top: 3rem;
     /* margin-bottom: 20px; */
+}
+
+
+.btn-hero-image {
+    margin-top: 3rem;
 }
 
 /* .data {
