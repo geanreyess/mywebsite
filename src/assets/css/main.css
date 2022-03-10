@@ -252,7 +252,7 @@ img {
     max-width: 300px;
     width: 180px;
     padding: 1rem 10px 0 10px;
-    border-right: thin solid #214c87;
+    border-right: thin solid var(--border-color);
     background-color: var(--second-color);
     transition: transform .3s ease;
     transform: translate(-100%, 0);
@@ -696,7 +696,8 @@ form textarea {
     width: 50%;
     color: var(--color-text);
     background-color : var(--bg-btn-hero-image);
-    border: thin solid var(--border-color);
+    /* border: thin solid var(--border-color); */
+    border: 0;
     border-radius: 3px;
     padding: 8px;
     opacity: 0.75;
