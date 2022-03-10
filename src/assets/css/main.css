@@ -169,15 +169,20 @@ img {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    /* width: 40px; */
+    width: 52px;
+    height: 52px;
     border: thin solid #214c87;
     border-radius: 50%;
     background-color: var(--bg-botton);
     transition: background-color 1s ease;
 }
 
-.burger-btn > svg {
-    fill: var(--color-text);
+.burger-btn > .open {
+    fill: var(--bg-btn-hero-image);
+}
+
+.burger-btn > .close {
+    fill: var(--form-error-color);
 }
 
 .none {
@@ -684,6 +689,10 @@ form textarea {
 /* Desktop */
 @media screen and (min-width: 1024px) {
 
+    .photo-perfil {
+        width: 25vw;
+    }
+    
     .data .title {
         font-size: 3.6rem; 
     }
