@@ -373,7 +373,7 @@ img {
     white-space: nowrap;
     border-right: 4px solid;
     width: 23ch;
-    /* animation: typing 4s steps(23) infinite, blink .5s infinite step-end alternate; */
+    animation: typing 4s steps(23) infinite, blink .5s infinite step-end alternate;
     overflow: hidden;
 }
 
